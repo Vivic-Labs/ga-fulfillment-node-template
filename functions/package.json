@@ -1,0 +1,31 @@
+{
+  "name": "ga-fulfillment-node-template",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "actions-on-google": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^8.1.0",
+    "express": "^4.16.4",
+    "firebase": "^7.0.0",
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.2.0"
+  },
+  "devDependencies": {
+    "ngrok": "^3.1.1",
+    "nodemon": "^1.19.3"
+  },
+  "scripts": {
+    "lint": "eslint ..",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "tunnel": "../node_modules/.bin/ngrok http 3000",
+    "dev": "../node_modules/.bin/nodemon functions/index.js",
+    "start": "npm run shell"
+  }
+}

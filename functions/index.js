@@ -21,7 +21,7 @@ expressApp.get("/", (req, res) => {
 
 
 if (process.env.NODE_ENV === 'dev') {
-    const PORT = process.env.PORT | 8080;
+    const PORT = process.env.PORT | 3000;
     expressApp.listen(PORT, () =>
         console.log(`Express server started on port ${PORT}su`)
     );

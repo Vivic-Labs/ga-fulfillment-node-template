@@ -11,8 +11,8 @@
     "dotenv": "^8.1.0",
     "express": "^4.16.4",
     "firebase": "^7.0.0",
-    "firebase-admin": "^8.6.0",
-    "firebase-functions": "^3.2.0"
+    "firebase-admin": "^11.4.1",
+    "firebase-functions": "^3.24.1"
   },
   "devDependencies": {
     "ngrok": "^3.1.1",
